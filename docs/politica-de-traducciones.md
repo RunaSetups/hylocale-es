@@ -42,8 +42,45 @@ Antes de traducir cualquier plugin, hay que verificar su licencia y, si no lo pe
 
 ## Formato de traducción
 
-[Por definir en la Semana 2 de la Fase 1: paquetes de archivos traducidos, override en tiempo de ejecución, o ambos.]
+Decidido el 25/09/2026, después de investigar cómo maneja los idiomas Hytale.
+
+**Idioma del jugador.** El cliente de Hytale no ofrece español, así que HyLocale ES le asigna `es-ES` desde el servidor a los jugadores que llegan con el cliente en inglés. Cada jugador puede elegir con `/idioma es` o `/idioma en`. El idioma por defecto se configura en `DefaultLanguage`.
+
+**Cómo se traduce cada plugin**, según cómo guarda sus textos:
+
+| Tipo | Cómo lo detectamos | Cómo lo traducimos |
+|---|---|---|
+| A. Usa el sistema de idiomas de Hytale | Trae archivos `Server/Languages/en-US/*.lang` | HyLocale ES incluye el `es-ES/*.lang` equivalente. Solo completa lo que falta: si el plugin ya trae su propio `es-ES`, el suyo tiene prioridad. |
+| B. Tiene un sistema propio (JSON, YAML) | Archivos de idioma o mensajes en su configuración | Si el plugin soporta varios idiomas, se aporta el español al proyecto original (pull request). Si tiene un solo archivo de mensajes, se distribuye el archivo traducido con instrucciones. |
+| C. Texto fijo en el código (`Message.raw`) | No hay archivo que traducir | No se puede traducir desde afuera. Se le ofrece al autor pasar sus textos a claves de traducción. |
+
+**Lo que ningún plugin puede traducir:** los menús del propio cliente (opciones, pantalla principal). Viven en la PC de cada jugador.
 
 ## Guía de estilo
 
-[Por definir en la Semana 2: español neutro o rioplatense, tuteo o voseo, términos de juego que quedan sin traducir.]
+Decidida el 25/09/2026.
+
+- **Español neutro con tuteo.** El mismo texto lo leen jugadores de toda Hispanoamérica y España: nada de voseo ("usá") ni vosotros ("usad"). Se escribe "usa", "escribe", "puedes".
+- **Sin regionalismos.** Se prefieren palabras que se entiendan en todos lados.
+- **Tono claro, directo y amable**, como el original. Frases cortas: el espacio en pantalla es limitado.
+- **Lenguaje inclusivo cuando sea natural:** "Te damos la bienvenida" en lugar de "Bienvenido/a".
+- **Ortografía completa:** tildes, ñ y signos de apertura (¿ ¡) siempre. La fuente del juego los soporta.
+- **Mayúscula solo al inicio** de títulos y botones ("Configuración del servidor", no "Configuración Del Servidor").
+
+**Nunca se traduce:**
+- Comandos y sus argumentos (`/home`, `/warp`, `/rg flag`).
+- Marcadores de posición (`{player}`, `{0}`, `%s`) y códigos de color o formato.
+- Nombres propios del juego y de los plugins (Hytale, Orbis, Kweebec, EliteEssentials).
+
+**Glosario inicial.** Se amplía a medida que traducimos.
+
+| Inglés | Español | Nota |
+|---|---|---|
+| server | servidor | |
+| player | jugador | |
+| spawn, warp, kit, PvP, TPA | se mantienen | Términos que la comunidad hispana ya usa en inglés |
+| home | hogar | En comandos se mantiene `/home` |
+| region | región | |
+| claim | reclamo | |
+| permission | permiso | |
+| cooldown | tiempo de espera | |
