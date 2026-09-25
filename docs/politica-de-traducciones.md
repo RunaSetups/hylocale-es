@@ -58,8 +58,10 @@ Decidido el 25/09/2026, después de investigar cómo maneja los idiomas Hytale.
 
 ## Guía de estilo
 
-Decidida el 25/09/2026.
+Decidida el 25/09/2026 y validada contra el mercado (ver "Evidencia" al final de esta sección).
 
+- **El término popular gana al de diccionario.** Si la comunidad ya eligió una palabra, usamos esa, aunque exista una "más correcta". Lo conocido da confianza y hace que el jugador se sienta en casa.
+- **La misma palabra para el mismo concepto, siempre.** Mezclar "casa" y "hogar" en un mismo plugin es el error más común del mercado: no lo repetimos.
 - **Español neutro con tuteo.** El mismo texto lo leen jugadores de toda Hispanoamérica y España: nada de voseo ("usá") ni vosotros ("usad"). Se escribe "usa", "escribe", "puedes".
 - **Sin regionalismos.** Se prefieren palabras que se entiendan en todos lados.
 - **Tono claro, directo y amable**, como el original. Frases cortas: el espacio en pantalla es limitado.
@@ -72,15 +74,26 @@ Decidida el 25/09/2026.
 - Marcadores de posición (`{player}`, `{0}`, `%s`) y códigos de color o formato.
 - Nombres propios del juego y de los plugins (Hytale, Orbis, Kweebec, EliteEssentials).
 
-**Glosario inicial.** Se amplía a medida que traducimos.
+**Glosario.** Se amplía a medida que traducimos, siempre con evidencia de uso.
 
 | Inglés | Español | Nota |
 |---|---|---|
 | server | servidor | |
 | player | jugador | |
-| spawn, warp, kit, PvP, TPA | se mantienen | Términos que la comunidad hispana ya usa en inglés |
-| home | hogar | En comandos se mantiene `/home` |
+| spawn, warp, kit, PvP, TPA | se mantienen | Ninguna traducción analizada los traduce |
+| home | casa | Más usado que "hogar" (41 contra 19). En comandos se mantiene `/home` |
+| claim (verbo) | reclamar | "Reclamar este terreno", "reclamar un kit" |
+| claimed | reclamado / reclamada | |
+| claim (el área protegida), plot | terreno | "Terreno" es lo más usado en Latinoamérica. "Parcela" suena a España |
 | region | región | |
-| claim | reclamo | |
+| teleport | teletransportar | |
+| money | dinero | |
+| balance | saldo | "Tu saldo: 100". "Balance" casi no se usa |
 | permission | permiso | |
-| cooldown | tiempo de espera | |
+| cooldown | tiempo de espera | O con el verbo: "Debes esperar {time}" |
+
+**Evidencia (25/09/2026).** Se analizaron las traducciones al español de EssentialsX, LuckPerms, mcMMO, Jobs Reborn y Towny (versiones es-ES, es-MX y es-AR) de Minecraft, más HyEssentialsX de Hytale, contando solo los textos que ve el jugador:
+
+- **Trato:** 8 de 8 archivos usan tú. Ninguno usa vos ni vosotros, ni siquiera la versión argentina de Towny.
+- **Claim:** "reclamar" aparece 111 veces, "reclamado/a" 50, "terreno" 259; "reclamo" solo 34.
+- **Calidad del mercado:** la única traducción de un plugin de Hytale tiene caracteres rotos, líneas sin traducir y errores de traducción automática (un botón *claim* traducido como "Afirmar").
