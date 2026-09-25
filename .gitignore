@@ -10,3 +10,7 @@ run/
 .project
 .settings/
 .vscode
+
+# Datos que el plugin escribe en runtime: en desarrollo runServer enlaza su carpeta de datos a src/main/resources
+src/main/resources/config.json*
+src/main/resources/idiomas.properties*

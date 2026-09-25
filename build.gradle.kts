@@ -41,6 +41,22 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    testImplementation(platform("org.junit:junit-bom:6.1.3"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+// En desarrollo runServer enlaza la carpeta de datos del plugin a src/main/resources:
+// lo que el plugin escribe en runtime no debe terminar dentro del .jar.
+tasks.processResources {
+    exclude("config.json*", "idiomas.properties*")
+}
+
 tasks.named<Jar>("jar") {
     archiveBaseName.set(project.property("mod_name").toString())
     archiveVersion.set(project.property("version").toString())
