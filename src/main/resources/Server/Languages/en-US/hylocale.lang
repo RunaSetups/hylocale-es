@@ -1,0 +1,2 @@
+commands.hylocale.desc = Shows the HyLocale ES status
+commands.hylocale.status = HyLocale ES is active. No translations loaded yet.

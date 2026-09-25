@@ -19,7 +19,7 @@ public class HyLocaleCommand extends AbstractCommand {
     @Nullable
     @Override
     protected CompletableFuture<Void> execute(@Nonnull CommandContext context) {
-        context.sendMessage(Message.raw("HyLocale ES activo. Todavia sin traducciones cargadas."));
+        context.sendMessage(Message.translation("hylocale.commands.hylocale.status"));
         return CompletableFuture.completedFuture(null);
     }
 }
