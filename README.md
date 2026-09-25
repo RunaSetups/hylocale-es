@@ -37,6 +37,18 @@ Nuestro compromiso: actualizar en menos de 7 días después de cada parche estab
 
 [Completar con los pasos definitivos cuando exista la primera versión.]
 
+## Desarrollo
+
+Requiere Java 25 ([JetBrains Runtime](https://github.com/JetBrains/JetBrainsRuntime) recomendado). El wrapper de Gradle se encarga del resto.
+
+```
+./gradlew setupHytaleDev   # prepara el entorno de desarrollo local
+./gradlew runServer        # levanta el servidor local de pruebas
+./gradlew build            # compila el .jar
+```
+
+En Windows usá `gradlew.bat` en vez de `./gradlew`.
+
 ## Soporte
 
 ¿Encontraste un error o un texto sin traducir? Abrí un [issue](../../issues) o escribinos en el Discord de RunaSetups: [LINK DEL DISCORD].

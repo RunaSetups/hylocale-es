@@ -1,0 +1,27 @@
+{
+    "Group": "RunaSetups",
+    "Name": "HyLocaleES",
+    "Version": "0.0.1",
+    "Description": "Capa de localizacion en espanol para plugins de servidores de Hytale",
+    "Authors": [
+        {
+            "Name": "RunaSetups",
+            "Email": "bautistachamorro07@gmail.com",
+            "Url": "https://github.com/RunaSetups"
+        }
+    ],
+    "Website": "https://github.com/RunaSetups/hylocale-es",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Dependencies": {
+        "Hytale:AssetModule": "*"
+    },
+    "OptionalDependencies": {
+        
+    },
+    "ServerVersion": ">=0.5.3 <0.6.0",
+    "Main": "com.runasetups.hylocale.HyLocaleEsPlugin",
+    "UpdateChecker": {
+        "CurseForge": ""
+    }
+}
