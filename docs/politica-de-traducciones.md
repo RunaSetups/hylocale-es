@@ -18,7 +18,7 @@ Antes de traducir cualquier plugin, hay que verificar su licencia y, si no lo pe
 | LuckPerms | lucko | MIT | Sí (es-ES 100%, servidor de traducciones propio) | No requerido | Descartado: ya traducido | 25/09/2026 |
 | Ecotale | MichiWeon | All Rights Reserved (desde 1.0.6; antes MIT) | Sí (es-ES incluido) | — | Descartado: ya traducido | 25/09/2026 |
 | HyCitizens | Electro Games | Source-available: publicar derivados en CurseForge/BuiltByBit requiere permiso escrito | No | Pedido el 25/09 ([issue #23](https://github.com/ElectroGamesDev/HyCitizens/issues/23)) | Esperando respuesta | 25/09/2026 |
-| OrbisGuard | wiflow | All Rights Reserved | Sin verificar (código cerrado) | Pendiente de pedir | Sin empezar | 25/09/2026 |
+| OrbisGuard | wiflow | All Rights Reserved | Sin verificar (código cerrado) | Pedido el 25/09 en `#mods-questions` del Discord de WiFlow (el formulario de tickets estaba caído) | Esperando respuesta | 25/09/2026 |
 | NPC Dialog | Hyronix | All Rights Reserved | Sin verificar (código cerrado) | Pendiente de pedir | Sin empezar | 25/09/2026 |
 | TaleQuests | AselStudios | Pago, sin licencia pública | Anuncia 7 idiomas, sin verificar si incluye español | — | Verificar ficha en BuiltByBit | 25/09/2026 |
 | EliteEssentials | EliteScouter | MIT según CurseForge (el repo no tiene archivo LICENSE) | No | Aviso por cortesía el 25/09 ([issue #70](https://github.com/EliteScouter/EliteEssentials/issues/70)) | Candidato principal, esperando respuesta | 25/09/2026 |
