@@ -1,2 +1,8 @@
 commands.hylocale.desc = Muestra el estado de HyLocale ES
 commands.hylocale.status = HyLocale ES está activo. Todavía no hay traducciones cargadas.
+commands.idioma.desc = Cambia el idioma en que ves los textos del servidor
+commands.idioma.arg = Idioma: es (español) o en (inglés)
+commands.idioma.changed = Listo: ahora ves los textos del servidor en español.
+commands.idioma.invalid = Ese idioma no está disponible. Usa /idioma es o /idioma en.
+commands.idioma.playersOnly = Este comando solo lo puede usar un jugador.
+commands.idioma.saveError = No se pudo guardar tu idioma. Avisa a un administrador.

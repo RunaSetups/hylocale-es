@@ -1,2 +1,8 @@
 commands.hylocale.desc = Shows the HyLocale ES status
 commands.hylocale.status = HyLocale ES is active. No translations loaded yet.
+commands.idioma.desc = Changes the language of the server texts you see
+commands.idioma.arg = Language: es (Spanish) or en (English)
+commands.idioma.changed = Done: server texts are now shown in English.
+commands.idioma.invalid = That language is not available. Use /idioma es or /idioma en.
+commands.idioma.playersOnly = Only players can use this command.
+commands.idioma.saveError = Your language could not be saved. Please tell an administrator.
